@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal Control</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Traffic Signal Control</h1>
+        <form id="signalForm" class="mt-4">
+            <div class="form-group">
+                <label for="sequence">Signal Sequence (e.g., A,B,C,D):</label>
+                <input type="text" class="form-control" id="sequence" name="sequence" required/>
+            </div>
+            <div class="form-group">
+                <label for="greenInterval">Green Interval (seconds):</label>
+                <input type="number" class="form-control" id="greenInterval" name="greenInterval" required/>
+            </div>
+            <div class="form-group">
+                <label for="yellowInterval">Yellow Interval (seconds):</label>
+                <input type="number" class="form-control" id="yellowInterval" name="yellowInterval" required/>
+            </div>
+            <div class="text-center">
+                <button type="button" id="startButton" class="btn btn-success">Start</button>
+                <button type="button" id="stopButton" class="btn btn-danger">Stop</button>
+            </div>
+        </form>
+        <div id="signalStatus" class="mt-4 text-center"></div>
+        <div class="signals mt-4 text-center">
+            <div class="signal" id="signalA"></div>
+            <div class="signal" id="signalB"></div>
+            <div class="signal" id="signalC"></div>
+            <div class="signal" id="signalD"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

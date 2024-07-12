@@ -1,0 +1,52 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#signalForm {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#startButton, #stopButton {
+    width: 100px;
+}
+
+.signals {
+    display: flex;
+    justify-content: space-around;
+}
+
+.signal {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.signal.green {
+    background-color: green;
+}
+
+.signal.yellow {
+    background-color: yellow;
+}
+
+.signal.red {
+    background-color: red;
+}
